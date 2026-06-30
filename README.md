@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Multi-Source Candidate Data Transformer
 
 A robust Python pipeline designed to ingest candidate profiles from both structured and unstructured sources, normalize data fields (phone, dates, countries, and skill variants), perform entity resolution (deduplication) across profiles, and output unified, schema-valid JSON candidate files. It features a custom runtime projection layer that dynamically reshapes output keys, filters properties, handles missing values, and validates against dynamic schema configurations.
@@ -36,6 +35,8 @@ Canonical Schema Generation
 Config-Based Projection
       ↓
 Final JSON Output
+
+---
 
 ## 3. Running the Pipeline
 
