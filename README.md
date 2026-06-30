@@ -19,7 +19,7 @@ Ensure you have **Python 3.10+** installed on your system.
    ```
    *(Installs: `pydantic` for modeling, `phonenumbers` for E.164 formatting, `jsonschema` for dynamic output validation, `pypdf` and `pdfplumber` for PDF text extraction, and `pytesseract` for OCR).*
 
-# Pipeline Flow
+## Pipeline Flow
 
 ```text
 Input Sources
@@ -38,26 +38,25 @@ Final JSON Output
 
 ---
 
-## 3. Running the Pipeline
+## Running the Pipeline
 
 You can run the pipeline from the command line using the root-level helper `run.py`.
 
-### A. Run End-to-End on Sample Data (CSV + Resume)
-Ingest both the structured CSV and unstructured resume text simultaneously, merge candidates, and write the default profile and custom projected profile:
-```bash
-python run.py --csv data/sample_csv.csv --resume data/sample_resume.txt --config data/custom_config.json --output-default data/output_default.json --output-custom data/output_custom.json
-```
+### Run End-to-End on Sample Data
 
-### B. Command Options
-```bash
-python run.py --help
-```
-*   `--csv`: Path to the structured Recruiter CSV export.
-*   `--resume`: Path to the unstructured Resume (PDF or TXT file).
-*   `--config`: Path to the runtime dynamic custom configuration JSON.
-*   `--output-default`: Path to write the default canonical JSON (defaults to `data/output_default.json`).
-*   `--output-custom`: Path to write the custom projected JSON (defaults to `data/output_custom.json`).
+This command ingests both:
+- structured data (`CSV`)
+- unstructured data (`Resume`)
 
+The pipeline merges candidate information, generates the canonical output schema, and creates a configurable custom output.
+
+```bash
+python run.py \
+  --csv data/sample_csv.csv \
+  --resume data/sample_resume.txt \
+  --config data/custom_config.json \
+  --output-default data/output_default.json \
+  --output-custom data/output_custom.json
 ---
 
 ## 4. Running the Tests
