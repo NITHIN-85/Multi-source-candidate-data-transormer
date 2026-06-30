@@ -46,7 +46,7 @@ You can run the pipeline from the command line using the root-level helper `run.
 
 This command ingests both:
 - structured data (`CSV`)
-- unstructured data (`Resume`)
+- unstructured data (`Resume`,'Github profile URL')
 
 The pipeline merges candidate information, generates the canonical output schema, and creates a configurable custom output.
 
