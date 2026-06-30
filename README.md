@@ -5,35 +5,6 @@ A robust Python pipeline designed to ingest candidate profiles from both structu
 
 ---
 
-## 1. Project Directory Layout
-
-```
-assignment/
-├── data/                      # Sample inputs & output JSONs
-│   ├── sample_csv.csv         # Structured recruiter CSV export
-│   ├── sample_resume.txt      # Unstructured resume text file
-│   ├── custom_config.json     # Custom dynamic output configuration
-│   ├── output_default.json    # Canonical output schema result
-│   └── output_custom.json     # Dynamic custom output schema result
-├── src/                       # Pipeline source code
-│   ├── __init__.py
-│   ├── cli.py                 # CLI argument parsing and runner
-│   ├── pipeline.py            # End-to-end pipeline coordinator
-│   ├── parser.py              # CSV and Resume text (Regex/PDF) parsers
-│   ├── normalizer.py          # E.164, YYYY-MM, ISO country, and skill formatters
-│   ├── merger.py              # Entity matching, trust weights, and provenance logs
-│   └── projector.py           # Dynamic output projection & JSON Schema validator
-├── tests/                     # Unit and integration test suite
-│   ├── __init__.py
-│   └── test_pipeline.py       # Test assertions for normalizers, merger, projector
-├── requirements.txt           # Package dependencies
-├── run.py                     # Convenience runner script
-├── assignment_summary.md      # Consolidated assignment specifications
-└── technical_design_draft.md  # Stage 1 Technical Design PDF draft
-```
-
----
-
 ## 2. Installation & Setup
 
 Ensure you have **Python 3.10+** installed on your system.
@@ -49,20 +20,22 @@ Ensure you have **Python 3.10+** installed on your system.
    ```
    *(Installs: `pydantic` for modeling, `phonenumbers` for E.164 formatting, `jsonschema` for dynamic output validation, `pypdf` and `pdfplumber` for PDF text extraction, and `pytesseract` for OCR).*
 
-3. **Optional: Install Tesseract OCR for scanned PDFs**
-   
-   If you have scanned/image-based PDF resumes, you'll need Tesseract OCR installed on your system:
-   - **Windows:** Download installer from [UB-Mannheim/tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
-   - **macOS:** `brew install tesseract`
-   - **Linux:** `sudo apt-get install tesseract-ocr`
-   
-   After installation, optionally set the path in your code:
-   ```python
-   import pytesseract
-   pytesseract.pytesseract.pytesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Windows
-   ```
+# Pipeline Flow
 
----
+```text
+Input Sources
+      ↓
+Data Extraction
+      ↓
+Normalization
+      ↓
+Merge & Conflict Resolution
+      ↓
+Canonical Schema Generation
+      ↓
+Config-Based Projection
+      ↓
+Final JSON Output
 
 ## 3. Running the Pipeline
 
@@ -117,7 +90,4 @@ python -m unittest tests/test_pipeline.py
 ### B. Handled Edge Cases
 *   **Fictional F55-Numbers & 7-Digit US Dialing:** Fallback area code `650` is automatically prepended, allowing fictional numbers to validate as possible US numbers in the `phonenumbers` library.
 *   **Prose Date Variations:** Parses formats like "Present", "Jan 2024", "2021" into correct `YYYY-MM` formats.
-*   **Missing Fields / Graceful Degradation:** Malformed input files skip processing gracefully. Missing fields default to `null` and are omitted or errored according to the runtime configuration's `on_missing` rule.
-=======
-# Multi-source-candidate-data-transormer
->>>>>>> 1ace7e7f2cf36c06c73ef0ff92830b1df4c0f7ea
+*   **Missing Fields / Graceful Degradation:** Malformed input files skip processing gracefully. Missing fields default to `null` and are omitted or errored according to the runtime configuration's `on_missing` rule  
