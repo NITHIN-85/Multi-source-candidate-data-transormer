@@ -1,0 +1,46 @@
+[
+  {
+    "full_name": "Alice Smith",
+    "primary_email": "alice.smith@example.com",
+    "phone": "+15550199",
+    "skills": [
+      "Python",
+      "Go",
+      "JavaScript"
+    ],
+    "overall_confidence": 0.78
+  },
+  {
+    "full_name": "Bob Johnson",
+    "primary_email": "bob.johnson@example.com",
+    "phone": "+447911123456",
+    "skills": null,
+    "overall_confidence": 0.4
+  },
+  {
+    "full_name": "Mallikarjun",
+    "primary_email": "suremallikarjun2@gmail.com",
+    "phone": "+917975322398",
+    "skills": [
+      "Java",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "Python",
+      "SQL",
+      "React",
+      "CSS",
+      "Node.js",
+      "Express.js",
+      "Machine Learning",
+      "Computer Vision",
+      "Object Detection",
+      "MongoDB",
+      "Git",
+      "GitHub",
+      "VS Code",
+      "A WS"
+    ],
+    "overall_confidence": 0.8
+  }
+]

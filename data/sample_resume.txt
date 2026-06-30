@@ -1,0 +1,24 @@
+ALICE SMITH
+Email: alice.smith@example.com
+Phone: (555) 0199
+Website: https://github.com/alicesmith
+LinkedIn: https://linkedin.com/in/alicesmith
+Location: San Francisco, CA, United States
+
+Summary:
+Experienced Backend Developer specializing in Python, Cloud Architecture, and Distributed Systems.
+
+Skills: Python, Go, SQL, Docker, AWS, Kubernetes, Javascript
+
+Experience:
+Google - Senior Software Engineer
+January 2024 - Present
+Leading a team of engineers to build scalable backend systems.
+
+Microsoft - Software Engineer II
+June 2021 - December 2023
+Developed cloud services using Go, Kubernetes, and SQL database clusters.
+
+Education:
+Stanford University
+B.S. in Computer Science (Graduated 2021)

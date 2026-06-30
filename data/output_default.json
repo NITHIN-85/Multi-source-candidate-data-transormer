@@ -1,0 +1,417 @@
+[
+  {
+    "candidate_id": "36515c6c-e6af-5bba-a07c-9c40a7c069bc",
+    "full_name": "Alice Smith",
+    "emails": [
+      "alice.smith@example.com"
+    ],
+    "phones": [
+      "+15550199"
+    ],
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "",
+      "github": "https://github.com/alicesmith",
+      "portfolio": "https://alicesmith.dev",
+      "other": []
+    },
+    "headline": "Senior Backend & Infrastructure Engineer. Building scalable services.",
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 0.8,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "Go",
+        "confidence": 0.8,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.8,
+        "sources": [
+          "github"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Google",
+        "title": "Software Engineer",
+        "start": null,
+        "end": "2026-07",
+        "summary": "Extracted from recruiter CSV"
+      }
+    ],
+    "education": [],
+    "repository_count": 3,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "location",
+        "source": "recruiter_csv",
+        "method": "merge_properties"
+      },
+      {
+        "field": "links",
+        "source": "recruiter_csv",
+        "method": "merge_properties"
+      },
+      {
+        "field": "headline",
+        "source": "github",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "repository_count",
+        "source": "github",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "skills",
+        "source": "recruiter_csv",
+        "method": "merge_properties"
+      }
+    ],
+    "overall_confidence": 0.78
+  },
+  {
+    "candidate_id": "e6db83a3-381b-5959-ae94-198e6afb3975",
+    "full_name": "Bob Johnson",
+    "emails": [
+      "bob.johnson@example.com"
+    ],
+    "phones": [
+      "+447911123456"
+    ],
+    "location": {
+      "city": "",
+      "region": "",
+      "country": ""
+    },
+    "links": {
+      "linkedin": "",
+      "github": "",
+      "portfolio": "",
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [
+      {
+        "company": "Netflix",
+        "title": "Tech Lead",
+        "start": null,
+        "end": "2026-07",
+        "summary": "Extracted from recruiter CSV"
+      }
+    ],
+    "education": [],
+    "repository_count": null,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "union_all_sources"
+      }
+    ],
+    "overall_confidence": 0.4
+  },
+  {
+    "candidate_id": "31e0cd38-21f4-5d04-9e56-ed5f2b298ce6",
+    "full_name": "Mallikarjun",
+    "emails": [
+      "suremallikarjun2@gmail.com"
+    ],
+    "phones": [
+      "+917975322398"
+    ],
+    "location": {
+      "city": "Ballari",
+      "region": "",
+      "country": "IN"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/mallikarjun-sure-114a4525b/",
+      "github": "https://github.com/MallikarjunSure",
+      "portfolio": "https://mallikarjunsure.github.io/",
+      "other": []
+    },
+    "headline": "Computer Science Student",
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "Java",
+        "confidence": 0.8,
+        "sources": [
+          "github",
+          "resume"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "confidence": 0.8,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.8,
+        "sources": [
+          "github",
+          "resume"
+        ]
+      },
+      {
+        "name": "HTML",
+        "confidence": 0.8,
+        "sources": [
+          "github",
+          "resume"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.8,
+        "sources": [
+          "github",
+          "resume"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CSS",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Express.js",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Object Detection",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "VS Code",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "A WS",
+        "confidence": 0.7,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Personal/Academic Project",
+        "title": "Exam-Proctoring-System",
+        "start": null,
+        "end": "2026-07",
+        "summary": "Technologies: React, TypeScript, Node.js, MongoDB. \u2013Developed a full-stack AI-based exam proctoring system with real-time monitoring and risk scoring. \u2013Implemented face detection, gaze tracking (MediaPipe), and phone detection (YOLOv8) to identify suspicious activities. \u2013Built a secure backend with Node.js, Express, and JWT authentication for session tracking and event logging. \u2013Designed an interactive React dashboard for live monitoring, alerts, and evidence-based review."
+      },
+      {
+        "company": "Personal/Academic Project",
+        "title": "Fraud-Detection-Platform",
+        "start": null,
+        "end": "2026-07",
+        "summary": "Technologies: React, Node.js, MongoDB, Python. \u2013Developed an end-to-end fraud detection platform with real-time transaction scoring and decisioning (approve, verify, block). \u2013Built machine learning models using Scikit-learn/XGBoost to predict fraud probability and integrated them into backend APIs. \u2013Designed a full-stack system with React dashboard for analytics, trends, and model insights (ROC, confusion matrix). \u2013Implemented secure REST APIs with Node.js, Express, and JWT authentication, along with MongoDB for transaction and alert management."
+      },
+      {
+        "company": "Personal/Academic Project",
+        "title": "JARVISVirtualAssistant",
+        "start": null,
+        "end": "2026-07",
+        "summary": "Technologies: HTML, CSS, JS. \u2013Built a browser-based virtual assistant using Speech Recognition and Speech Synthesis APIs to process voice commands in real time. \u2013Implemented features for opening applications/websites, answering queries, and auto-performing Google search when commands are not recognized. \u2013Designed a responsive UI with microphone controls, voice wave animations, and automatic timeout handling for silence detection. \u2013Integrated dynamic command execution and interaction logic, improving user task efficiency and demonstrating core front-end development and voice automation skills."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Ballari Institute of Technology and Management, Ballari",
+        "degree": "B.E. in Computer Science and Engineering",
+        "field": "Computer Science and Engineering",
+        "end_year": 2026
+      },
+      {
+        "institution": "SC Gurukula PU College, Karadyal",
+        "degree": "Pre-University Course (PCMB)",
+        "field": "",
+        "end_year": 2022
+      },
+      {
+        "institution": "Sri Channabasaweswara Gurukula Residential High School, Kardyala",
+        "degree": "SSLC",
+        "field": "",
+        "end_year": 2020
+      }
+    ],
+    "repository_count": 11,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "github",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "emails",
+        "source": "github",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "phones",
+        "source": "github",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "location",
+        "source": "github",
+        "method": "merge_properties"
+      },
+      {
+        "field": "links",
+        "source": "github",
+        "method": "merge_properties"
+      },
+      {
+        "field": "headline",
+        "source": "github",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "repository_count",
+        "source": "github",
+        "method": "source_trust_hierarchy"
+      },
+      {
+        "field": "experience",
+        "source": "github",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "education",
+        "source": "github",
+        "method": "union_all_sources"
+      },
+      {
+        "field": "skills",
+        "source": "github",
+        "method": "merge_properties"
+      }
+    ],
+    "overall_confidence": 0.8
+  }
+]

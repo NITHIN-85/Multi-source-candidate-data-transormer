@@ -1,0 +1,35 @@
+{
+  "user": {
+    "login": "alicesmith",
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "bio": "Senior Backend & Infrastructure Engineer. Building scalable services.",
+    "location": "San Francisco, CA, USA",
+    "html_url": "https://github.com/alicesmith",
+    "blog": "https://alicesmith.dev",
+    "public_repos": 3
+  },
+  "repos": [
+    {
+      "name": "fastapi-microservice",
+      "description": "Template for FastAPI microservice with Prometheus metrics and Kubernetes deployment.",
+      "created_at": "2023-02-15T08:00:00Z",
+      "updated_at": "2024-04-10T12:00:00Z",
+      "language": "Python"
+    },
+    {
+      "name": "go-distributed-cache",
+      "description": "A light-weight distributed cache server implemented in Go.",
+      "created_at": "2022-05-10T10:00:00Z",
+      "updated_at": "2023-11-20T17:00:00Z",
+      "language": "Go"
+    },
+    {
+      "name": "react-dashboard",
+      "description": "Beautiful React and Tailwind dashboard UI.",
+      "created_at": "2021-09-01T14:00:00Z",
+      "updated_at": "2022-04-15T09:00:00Z",
+      "language": "JavaScript"
+    }
+  ]
+}
